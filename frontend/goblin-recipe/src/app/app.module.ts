@@ -10,6 +10,8 @@ import { RecipeListComponent } from './features/main/recipes/recipe-list/recipe-
 import { RecipeItemComponent } from './features/main/recipes/recipe-list/recipe-item/recipe-item.component';
 import { HeaderComponent } from './features/main/header/header.component';
 import { RecipeDetailComponent } from './features/main/recipes/recipe-detail/recipe-detail.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DropdownDirective } from './shared/directives/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -21,8 +23,9 @@ import { RecipeDetailComponent } from './features/main/recipes/recipe-detail/rec
     RecipeItemComponent,
     HeaderComponent,
     RecipeDetailComponent,
+    DropdownDirective,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
