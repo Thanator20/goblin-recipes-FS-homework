@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ingredientViewModel } from 'src/app/shared/models/ingredientViewModel';
+import { IngredientViewModel } from 'src/app/shared/models/ingredientViewModel';
 
 @Component({
   selector: 'app-shopping-list',
@@ -7,7 +7,7 @@ import { ingredientViewModel } from 'src/app/shared/models/ingredientViewModel';
   styleUrls: ['./shopping-list.component.scss'],
 })
 export class ShoppingListComponent implements OnInit {
-  ingredients: ingredientViewModel[] = [
+  ingredients: IngredientViewModel[] = [
     {
       name: 'apples',
       amount: 12,

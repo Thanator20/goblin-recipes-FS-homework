@@ -1,4 +1,4 @@
-export interface ingredientViewModel {
+export interface IngredientViewModel {
   name: string;
   amount: number;
 }

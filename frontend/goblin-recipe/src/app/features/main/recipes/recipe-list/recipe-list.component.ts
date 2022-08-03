@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { recipeViewModel } from 'src/app/models/recipeViewModel';
+import { RecipeViewModel } from 'src/app/models/recipeViewModel';
 
 @Component({
   selector: 'app-recipe-list',
@@ -7,7 +7,7 @@ import { recipeViewModel } from 'src/app/models/recipeViewModel';
   styleUrls: ['./recipe-list.component.scss'],
 })
 export class RecipeListComponent implements OnInit {
-  recipes: recipeViewModel[] = [
+  recipes: RecipeViewModel[] = [
     {
       name: 'recipe',
       description: 'test recipe',
