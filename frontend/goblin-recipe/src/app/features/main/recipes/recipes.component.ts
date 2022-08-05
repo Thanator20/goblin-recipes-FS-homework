@@ -11,7 +11,11 @@ import { RecipeViewModel } from 'src/app/models/recipeViewModel';
 export class RecipesComponent implements OnInit {
   selectedRecipe: RecipeViewModel;
 
-  constructor() {}
+  constructor(private recipeService: RecipeService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.recipeService.recipeSelected.subscribe((recipe: RecipeViewModel) => {
+      this.selectedRecipe = recipe;
+    });
+  }
 }
