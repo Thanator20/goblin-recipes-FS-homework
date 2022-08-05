@@ -28,4 +28,13 @@ export class ShoppingListService {
     this.ingredients.push(ingredient);
     this.ingredientAdded.emit(this.ingredients.slice());
   }
+
+  addIngredients(ingredientsFromShoppingList: IngredientViewModel[]) {
+    console.log(ingredientsFromShoppingList);
+    // for (let i = 0; i < ingredientsFromShoppingList.length; i++) {
+    //   this.addIngredient(ingredientsFromShoppingList[i]);
+    // }
+    this.ingredients.push(...ingredientsFromShoppingList);
+    this.ingredientAdded.emit(this.ingredients.slice());
+  }
 }
